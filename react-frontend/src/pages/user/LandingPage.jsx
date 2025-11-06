@@ -6,7 +6,6 @@ import CTASection from "../../components/CTASection";
 import Footer from "../../components/Footer";
 import Modal from "../../components/Modal";
 import SidePanel from "../../components/SidePanel";
-import "../../App.css";
 
 const LandingPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
