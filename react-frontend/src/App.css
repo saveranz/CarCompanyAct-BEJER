@@ -1,0 +1,120 @@
+/* Gray theme styles (flattened) */
+@import "tailwindcss";
+:root {
+  --bg: #f3f4f6; /* light page background */
+  --surface: #ffffff;
+  --muted: #6b7280;
+  --text: #111827;
+  --accent-violet: #7c3aed;
+  --accent-yellow: #fbbf24;
+  --card-border: rgba(0,0,0,0.04);
+  --glass: rgba(255,255,255,0.03);
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* prevent horizontal scrollbar */
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card { padding: 2em; }
+
+.read-the-docs { color: #888; }
+
+.avatar { border-radius: 5px; }
+
+.primary-button {
+  background: linear-gradient(90deg, var(--accent-violet) 0%, #5b21b6 100%);
+  color: #fff;
+  padding: 0.6em 1.2em;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.primary-button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(99,102,241,0.18);
+}
+
+.cards-grid {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card-panel {
+  background: linear-gradient(180deg, #ffffff 0%, #f7f7fb 100%);
+  border-radius: 12px;
+  padding: 1.1rem 1.4rem;
+  width: 220px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+  text-align: left;
+}
+
+.card-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--accent-violet) 0%, #5b21b6 100%);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem 0;
+  font-weight: 700;
+  color: #111827;
+}
+
+.card-desc {
+  margin: 0;
+  color: #4b5563; /* gray-600 */
+  font-size: 0.95rem;
+}
+
+.icon-svg { display: block; }
